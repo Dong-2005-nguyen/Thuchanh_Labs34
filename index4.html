@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form đăng kí</title>
+    <style>
+        input {
+            border-radius: 5px;
+            padding: 15px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        
+        button {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+        
+        button:hover {
+            background-color: darkblue;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Form đăng kí</h1>
+
+    <form>
+        <input type="text" name="name" placeholder="Họ và tên" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="tel" name="phone" placeholder="Số điện thoại" required><br>
+
+        <div class="gender">
+            <label><input type="radio" name="gender" value="Nam" required> Nam</label>
+            <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+        </div><br>
+
+        <button type="submit">Gửi</button>
+    </form>
+
+</body>
+
+</html>
